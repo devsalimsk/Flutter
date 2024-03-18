@@ -1,0 +1,156 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+    home: Home(),
+  ));
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("images/blackbackground.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 100.0, left: 20),
+          child: Column(
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  CircleAvatar(
+                    radius: 60,backgroundImage: AssetImage("images/salim.png"),),
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "Salim Sk",
+                        style: TextStyle(fontSize: 30,color: Colors.white,fontFamily: "Code"),
+                      ),
+                      Text(
+                        "Designation",
+                        style: TextStyle(fontSize: 15,color: Colors.white,fontFamily: "Code"),
+                      )
+                    ],
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 30),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.school,
+                          color: Colors.white,
+                          size: 40,
+                        ),
+                        SizedBox(
+                          width: 25,
+                        ),
+                        Text(
+                          "SR University",
+                          style: TextStyle(fontSize: 20,color: Colors.white,fontFamily: "Code"),
+                        )
+                      ],
+                    ),
+                    SizedBox(height: 10,),
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.computer_rounded,
+                          color: Colors.white,
+                          size: 40,
+                        ),
+                        SizedBox(
+                          width: 25,
+                        ),
+                        Text(
+                          "Flutter Development",
+                          style: TextStyle(fontSize: 20,color: Colors.white,fontFamily: "Code"),
+                        )
+                      ],
+                    ),
+                    SizedBox(height: 10,),
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.location_pin,
+                          color: Colors.white,
+                          size: 40,
+                        ),
+                        SizedBox(
+                          width: 25,
+                        ),
+                        Text(
+                          "SR Boy's Hostel",
+                          style: TextStyle(fontSize: 20,color: Colors.white,fontFamily: "Code"),
+                        )
+                      ],
+                    ),
+                    SizedBox(height: 10,),
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.email,
+                          color: Colors.white,
+                          size: 40,
+                        ),
+                        SizedBox(
+                          width: 25,
+                        ),
+                        Text(
+                          "salim.cse@gmail.com",
+                          style: TextStyle(fontSize: 20,color: Colors.white,fontFamily: "Code"),
+                        )
+                      ],
+                    ),
+                    SizedBox(height: 10,),
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.phone,
+                          color: Colors.white,
+                          size: 40,
+                        ),
+                        SizedBox(
+                          width: 25,
+                        ),
+                        Text(
+                          "+91 6297231735",
+                          style: TextStyle(fontSize: 20,color: Colors.white,fontFamily: "Code"),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 50,),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Text("About Me sdgsgs sdg sgas gdged df gsfdg s srfth srt hs rs ddhsdrhgf sdf hsdf dsh sd ds hsd hds hdsh sz dxzf hfhdh d fhd",style: TextStyle(fontSize: 22,color: Colors.white),),
+              ),
+              SizedBox(height: 20,),
+              Text(
+                  "Created By Salim",
+                  style: TextStyle(fontSize: 16,color: Colors.white),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
